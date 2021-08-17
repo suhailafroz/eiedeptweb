@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    <header>
+        <div class="container-fluid">
+            <div class="row bg-danger">
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="images/logo.png">
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="text-center text-white">
+                        <span class="eieFont">Electronics and Instrumentation Engineering</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <navigation>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger sticky-top">
+            <a class="navbar-brand text-center" style="margin-right: 35px" href="index.html">EIE DEPT
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About EIE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Message from Chairman</a>
+                            <a class="dropdown-item" href="#">Message from Principal</a>
+                            <a class="dropdown-item" href="visionmission.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="departmentHighlights.html">Department Highlights</a>
+                            <a class="dropdown-item" href="workshops.html">Workshops</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            People
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Facluty</a>
+                            <!-- <a class="dropdown-item" href="#">Profiles and Achievements</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Academic Curriculam</a>
+                            <a class="dropdown-item" href="#">Academic Program</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Research
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Publications</a>
+                            <a class="dropdown-item" href="#">Patents</a>
+                            <a class="dropdown-item" href="#">Research/Consultancy/Sponsored Projects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Infrastructural Facilities</a>
+                            <a class="dropdown-item" href="#">Lab Facilities</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Activities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Technolites</a>
+                            <a class="dropdown-item" href="#">Invited Talks</a>
+                            <a class="dropdown-item" href="#">IETE</a>
+                            <a class="dropdown-item" href="#">IEEE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </navigation>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/HoDPic.jpg" alt="HoDPic">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Dr. S. Harivardhagini</h5>
+                            <p class="text-dark card-text">M. E, Ph.D</p>
+                            <p class="text-dark card-text"><b>Designation: </b>
+                                Professor & Head</p>
+                            <p class="text-dark card-text"><b>Specialization: </b>
+                                <br><small>Electronics and Control</small></p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Dr. Narendra. B. Mustare</h5>
+                            <p class="text-dark card-text">M. Tech, Ph.D</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Biomedical Engineering</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Dr. Santosh Kumar Sahoo</h5>
+                            <p class="text-dark card-text">M. Tech, Ph.D</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Associate Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Electronics Instrumentation</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="HoDPic">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Dr. B. Saidulu</h5>
+                            <p class="text-dark card-text">M.Tech, Ph.D</p>
+                            <p class="text-dark card-text"><b>Designation: </b>
+                                Associate Professor</p>
+                            <p class="text-dark card-text"><b>Specialization: </b>
+                                <br><small>VLSI System design</small></p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. B. Satish </h5>
+                            <p class="text-dark card-text">M. Tech </p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Associate Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Digital Systems & Computer Electronics</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. O. Venkata Krishna </h5>
+                            <p class="text-dark card-text">M. Tech, Ph.D</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Associate Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>VLSI System design</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="HoDPic">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. D. Shyam Prasad</h5>
+                            <p class="text-dark card-text">M.Tech</p>
+                            <p class="text-dark card-text"><b>Designation: </b>
+                                Sr. Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization: </b>
+                                <br><small>Instrumentation and Control System</small></p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Dr. Eadala Sarath Yadav </h5>
+                            <p class="text-dark card-text">Ph.D</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Control Systems</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Ms. V. Sreelatha Reddy </h5>
+                            <p class="text-dark card-text">M.E</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Systems and Signal Processing</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="HoDPic">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. G. Venkateswarlu </h5>
+                            <p class="text-dark card-text">M.Tech</p>
+                            <p class="text-dark card-text"><b>Designation: </b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization: </b>
+                                <br><small>Electronics & Control</small></p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. P. Choudesh Varma </h5>
+                            <p class="text-dark card-text">M.Tech</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>VLSI System design</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Ms. Y. Divya </h5>
+                            <p class="text-dark card-text">M.Tech </p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Instrumentation & Control Engineering</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="HoDPic">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mrs. R. Prameela Devi </h5>
+                            <p class="text-dark card-text">M.E</p>
+                            <p class="text-dark card-text"><b>Designation: </b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization: </b>
+                                <br><small>Embedded Systems</small></p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. K. Uday </h5>
+                            <p class="text-dark card-text">M.Tech</p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Digital Systems and computer electronics</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="card" style="width:300px;" data-aos="zoom-in">
+                        <img class="card-img-top" style="height:200px;" src="images/20years5.jpg" alt="Narendra">
+                        <div class="card-body">
+                            <h5 class="text-dark card-title">Mr. C. Pramod Kumar </h5>
+                            <p class="text-dark card-text">M.Tech </p>
+                            <p class="text-dark card-text"><b>Designation :</b>
+                                Assistant Professor</p>
+                            <p class="text-dark card-text"><b>Specialization:</b>
+                                <br><small>Embedded Systems</small> </p>
+                            <a href="#" class="btn btn-primary">Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+            duration: 1000,
+
+        });
+    </script>
+</body>
+
+</html>
