@@ -5,13 +5,19 @@ html {
 
 body{
     background: repeating-linear-gradient(to bottom right,#810034,#1B262C,#100303,#252525,#11052C,rgb(119, 1, 48),#261C2C, rgb(51, 0, 73),rgb(247, 253, 4));
-    color:white;
+    color:whitesmoke;
+    /* background: url("../images/backgroundImg1.jpg"); */
     background-attachment: fixed;
+    background-size: cover;    
 }
 
 .eieFont{
     font-family: CG Omega;
     font-size: 1em;
+    /* background: url(../images/robo.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
 }
 
 .headingFont{
@@ -111,4 +117,7 @@ body{
   
   #myBtn:hover {
     background-color: #555;
+  }
+
+  .h1bg{
   }

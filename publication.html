@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+
+        .fixedmenu{
+            background: rgb(250, 250, 239);
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+            width: 120px;
+            height: 300px;
+            position: fixed;
+            /* top: 250px; */
+            bottom: 0;
+            right: 0;
+        }
+
+        .fixedmenu ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .fixedmenu ul li{
+            height: 40px;
+            line-height: 40px;
+            /* border: 1px solid red; */
+            width: 120px;
+            text-align: center;
+            /* margin-top: 8px; */
+        }
+        .fixedmenu ul li:hover{
+            background:burlywood;
+            color:cornsilk;
+        }
+        .fixedmenu ul li a{
+            text-decoration: none;
+            display: block;
+            font-family: garamond;
+            /* font-size: 1.5em; */
+            color:crimson;
+            font-weight: bolder;
+        }
+        .fixedmenu ul li a:hover{
+            background:rgb(36, 28, 18);
+            color:rgb(224, 221, 250);
+        }
+        @media screen and (max-width: 400px){
+            .fixedmenu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+    <header>
+        <div class="container-fluid">
+            <div class="row bg-danger">
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="images/logo.png">
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="text-center text-white h1bg">
+                        <span class="eieFont">Electronics and Instrumentation Engineering</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <navigation>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger sticky-top">
+            <a class="navbar-brand text-center" style="margin-right: 35px" href="index.html">EIE DEPT
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About EIE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="visionmission.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="departmentHighlights.html">Department Highlights</a>
+                            <a class="dropdown-item" href="workshops.html">Workshops</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            People
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="faculty.html">Facluty</a>
+                            <!-- <a class="dropdown-item" href="#">Profiles and Achievements</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="academicCurriculam.html">Academic Curriculum</a>
+                            <a class="dropdown-item" href="academicProgram.html">Academic Program</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Research
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Publications</a>
+                            <a class="dropdown-item" href="#">Patents</a>
+                            <a class="dropdown-item" href="#">Research/Consultancy/Sponsored Projects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Infrastructural Facilities</a>
+                            <a class="dropdown-item" href="#">Lab Facilities</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Activities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Technolites</a>
+                            <a class="dropdown-item" href="#">Invited Talks</a>
+                            <a class="dropdown-item" href="#">IETE</a>
+                            <a class="dropdown-item" href="#">IEEE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </navigation>
+    <!-- Publication details -->
+    <section class="mt-4" data-aos="zoom-in">
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center headingFont">
+                        Publications
+                    </h1>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>Publications in International Journals (Year: 2020-21)</h4>
+                            <table class="table text-white table-bordered">
+                                <tr>
+                                    <td>Sl. No</td>
+                                    <td>Name of the Faculty</td>
+                                    <td>Title of Publication</td>
+                                    <td>Position of the Author</td>
+                                    <td>Refereed &amp; Indexed by SCOPUS/SCI/Any Other</td>
+                                    <td>Number of Citations</td>
+                                    <td>Name of Journal/Publishers</td>
+                                    <td>ISSN/ISBN/Vol.no/ISSN No./ Page Nos.</td>
+                                </tr>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow:3'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>1</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none; width:134pt'><span
+                                            lang=EN-US style='mso-fareast-language:EN-IN'>Dr. Santosh
+                                            Kumar Sahoo</span></td>
+                                    <td rowspan=3 class=xl668567 width=165 style='border-top:none;width:124pt'><span
+                                            lang=EN-US>Defective object classification using advanced optimization
+                                            technique</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none;  width:90pt'><span
+                                            lang=EN-US>1st</span></td>
+                                    <td rowspan=3 class=xl648567 width=139 style='border-top:none;width:104pt'><span
+                                            lang=EN-US>Scopus</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none;  width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <td rowspan=3 class=xl658567 width=136 style='border-top:none;width:102pt'><span
+                                            lang=EN-US>Materials Today: Proceedings, Elsevier</span></td>
+                                    <td rowspan=3 class=xl668567 width=153 style='border-top:none;width:115pt'><span
+                                            lang=EN-US style='line-height:107%'>pp.1-5,
+                                            doi.org/10.1016/j.matpr.2020.08.481, September, 2020.<span style='mso-spacerun:yes'> </span></span></td>
+                                </tr>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow: 4'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>2</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none;  width:134pt'><span
+                                            lang=EN-US style='mso-fareast-language:EN-IN'>Dr.
+                                            Bellamkonda Saidulu</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none;  width:90pt'><span
+                                            lang=EN-US>2nd</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none;  width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                </tr>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow:  5'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>3</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none;  width:134pt'><span
+                                            lang=EN-US style='mso-fareast-language:EN-IN'>Mr. D. Shyam
+                                            Prasad</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none;  width:90pt'><span
+                                            lang=EN-US>3rd</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none;  width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <span lang=EN-US>
+                                </tr>
+                                </span>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow:  6'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>4</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none;width:134pt'><span
+                                            lang=EN-US>D<font class="font58567">r. </font>
+                                            <font class="font68567">Bellamkonda Saidulu</font>
+                                        </span></td>
+                                    <td rowspan=2 class=xl668567 width=165 style='border-top:none;width:124pt'><span
+                                            lang=EN-US>Design of MOS based Tera-&#8486; Resistance for Biomedical
+                                            Signal
+                                            (mHz) Applications</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none;  width:90pt'><span
+                                            lang=EN-US>1st</span></td>
+                                    <td rowspan=2 class=xl648567 width=139 style='border-top:none;width:104pt'><span
+                                            lang=EN-US>Scopus</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none;  width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <td rowspan=2 class=xl658567 width=136 style='border-top:none;width:102pt'><span
+                                            lang=EN-US style='line-height:107%'>Journal of Solid-State Technology</span></td>
+                                    <td rowspan=2 class=xl668567 width=153 style='border-top:none;width:115pt'><span
+                                            lang=EN-US style='line-height:107%'>Vol. 63 No. 6 (2020)</span></td>
+                                </tr>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow: 7'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>5</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none; width:134pt'><span
+                                            lang=EN-US style='mso-fareast-language:EN-IN'>Dr. Santosh
+                                            Kumar Sahoo</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none; width:90pt'><span
+                                            lang=EN-US>2nd</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none; width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                </tr>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow: 8'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>6</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none;  width:134pt'><span
+                                            lang=EN-US style='mso-fareast-language:EN-IN'>Dr. Santosh
+                                            Kumar Sahoo</span></td>
+                                    <td rowspan=2 class=xl738567 width=165 style='border-bottom:.5pt solid black;  border-top:none;width:124pt'><span
+                                            lang=EN-US style='mso-fareast-language:  EN-IN'>Self-Operational
+                                            Wastewater Treatment Plant using Supervised Learning
+                                            Algorithm</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none;  width:90pt'><span
+                                            lang=EN-US>2nd</span></td>
+                                    <td rowspan=2 class=xl718567 width=139 style='border-bottom:.5pt solid black;  border-top:none;width:104pt'><span
+                                            lang=EN-US>Scopus</span></td>
+                                    <td class=xl708567 width=118 style='border-top:none;border-left:none;  width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <td rowspan=2 class=xl758567 width=136 style='border-bottom:.5pt solid black;  border-top:none;width:102pt'><span
+                                            lang=EN-US>International Journal of
+                                            Advanced Science and Technology</span></td>
+                                    <td rowspan=2 class=xl738567 width=153 style='border-bottom:.5pt solid black;  border-top:none;width:115pt'><span
+                                            lang=EN-US>Vol. 29, No. 3 , pp.
+                                            11709-11716, (2020)</span></td>
+                                </tr>
+                                <tr height=40 style='mso-height-source:userset;height:30.0pt;mso-yfti-irow: 9'>
+                                    <td height=40 class=xl648567 width=64 style='height:30.0pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>7</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none; width:134pt'><span
+                                            lang=EN-US style='mso-fareast-language:EN-IN'>Ms. Y. Divya</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none; width:90pt'><span
+                                            lang=EN-US>1st</span></td>
+                                    <td class=xl708567 width=118 style='border-top:none;border-left:none; width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                </tr>
+                                <tr class=xl158567 height=126 style='height:94.5pt;mso-yfti-irow:10'>
+                                    <td height=126 class=xl648567 width=64 style='height:94.5pt;border-top:none;  width:48pt'><span
+                                            lang=EN-US>8</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none; width:134pt'><span
+                                            lang=EN-US>Dr. Shyam Prasad Devulapalli</span></td>
+                                    <td class=xl668567 width=165 style='border-top:none;border-left:none; width:124pt'>Srinivasa
+                                        Rao Chanamallu &amp; Satya Prasad Kodati&nbsp;, “A
+                                        hybrid ICA Kalman predictor algorithm for ocular artifacts removal”</td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none; width:90pt'><span
+                                            lang=EN-US>1st</span></td>
+                                    <td class=xl648567 width=139 style='border-top:none;border-left:none; width:104pt'><span
+                                            lang=EN-US>Scopus</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none;width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <td class=xl658567 width=136 style='border-top:none;border-left:none; width:102pt'><span
+                                            lang=EN-US>International Journal of Speech Technology</span></td>
+                                    <td class=xl668567 width=153 style='border-top:none;border-left:none; width:115pt'><span
+                                            lang=EN-US>June, Springer, doi.org/ 10.1007/
+                                            s10772-020-09721-y<span style='mso-spacerun:yes'>  </span></span></td>
+                                </tr>
+                                <tr height=84 style='height:63.0pt;mso-yfti-irow:11;mso-yfti-lastrow:yes'>
+                                    <td height=84 class=xl648567 width=64 style='height:63.0pt;border-top:none; width:48pt'><span
+                                            lang=EN-US>9</span></td>
+                                    <td class=xl658567 width=178 style='border-top:none;border-left:none; width:134pt'><span
+                                            lang=EN-US>Mr. C. Pramod Kumar</span></td>
+                                    <td class=xl668567 width=165 style='border-top:none;border-left:none; width:124pt'><span
+                                            lang=EN-US>Automatic tri-map segmentation for retinal
+                                            blood vessels</span></td>
+                                    <td class=xl648567 width=120 style='border-top:none;border-left:none; width:90pt'><span
+                                            lang=EN-US>2nd</span></td>
+                                    <td class=xl648567 width=139 style='border-top:none;border-left:none; width:104pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <td class=xl648567 width=118 style='border-top:none;border-left:none; width:89pt'><span
+                                            lang=EN-US>&nbsp;</span></td>
+                                    <td class=xl658567 width=136 style='border-top:none;border-left:none; width:102pt'><span
+                                            lang=EN-US style='line-height:107%'>The International
+                                            journal of analytical and experimental modal analysis</span></td>
+                                    <td class=xl668567 width=153 style='border-top:none;border-left:none; width:115pt'><span
+                                            lang=EN-US style='line-height:107%'>Volume XII, Issue VII,
+                                            July, Page No:1936-1944, 2020</span></td>
+                                </tr>
+                                <![if supportMisalignedColumns]>
+                                <tr height=0 style='display:none'>
+                                    <td width=64 style='width:48pt'></td>
+                                    <td width=178 style='width:134pt'></td>
+                                    <td width=165 style='width:124pt'></td>
+                                    <td width=120 style='width:90pt'></td>
+                                    <td width=139 style='width:104pt'></td>
+                                    <td width=118 style='width:89pt'></td>
+                                    <td width=136 style='width:102pt'></td>
+                                    <td width=153 style='width:115pt'></td>
+                                </tr>
+                                <![endif]>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Adding a fixed menu to the left -->
+    <div class="fixedmenu" data-aos="flip-down">
+        <ul>
+            <!-- <li><a href="#">2021-2022</a></li> -->
+            <li><a href="#">2020-2021</a></li>
+            <li><a href="#">2019-2020</a></li>
+            <li><a href="#">2018-2019</a></li>
+            <li><a href="#">2017-2018</a></li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+            duration: 1000,
+
+        });
+    </script>
+</body>
+
+</html>
