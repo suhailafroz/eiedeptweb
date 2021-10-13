@@ -38,3 +38,12 @@ function topFunction() {
     document.body.animate({ scrollTop: 0 }, 600);
     document.documentElement.scrollTop = 0;
 }
+
+function increaseSize() {
+    document.getElementById('imgmitubishi').style.width = "70%";
+    document.getElementById('imgmitubishi').style.height = "50%";
+}
+function decreaseSize() {
+    document.getElementById('imgmitubishi').style.width = "50%";
+    document.getElementById('imgmitubishi').style.height = "250px";
+}
